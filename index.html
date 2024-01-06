@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Test Project</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <input type="file" id="photo" />
+    <button onclick="onUploadClick()">Upload</button>
+
+    <script>
+      function onUploadClick() {
+        console.log("Test Upload");
+        const uploadFile = document.getElementById("photo").files[0];
+        console.log("Uploded File" + uploadFile);
+      }
+    </script>
+  </body>
+</html>
